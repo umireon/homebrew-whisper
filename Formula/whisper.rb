@@ -9,8 +9,9 @@ class Whisper < Formula
 
   bottle do
     root_url "https://github.com/umireon/homebrew-whisper/releases/download/whisper-9"
-    sha256 cellar: :any,                 monterey:     "90a7189107b4ac1ebd8294496be0747b9e6f281e5b0f326ff452245a699e234f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "406fe242562b2e1b42609c8be1226adfb64127bcea3cac0623725c44afddd80d"
+    sha256 cellar: :any,                 arm64_ventura: "e30cdd8a87edd3988f7260b069bb8287e4cc3d380f24bd20720ffe92e2a21fd2"
+    sha256 cellar: :any,                 monterey:      "90a7189107b4ac1ebd8294496be0747b9e6f281e5b0f326ff452245a699e234f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "406fe242562b2e1b42609c8be1226adfb64127bcea3cac0623725c44afddd80d"
   end
 
   depends_on "rust" => :build
