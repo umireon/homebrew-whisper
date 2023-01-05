@@ -7,6 +7,12 @@ class Whisper < Formula
   sha256 "d6ec9409a02a010dc0ffa3cfbe80c6db9ef8f97fa9d04e0dc16eb0fa75cc4f23"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/umireon/homebrew-whisper/releases/download/whisper-9"
+    sha256 cellar: :any,                 monterey:     "90a7189107b4ac1ebd8294496be0747b9e6f281e5b0f326ff452245a699e234f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "406fe242562b2e1b42609c8be1226adfb64127bcea3cac0623725c44afddd80d"
+  end
+
   depends_on "rust" => :build
   depends_on "ffmpeg"
   depends_on "numpy"
